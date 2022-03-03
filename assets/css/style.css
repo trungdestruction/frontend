@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Lexend';
-  src: url(/assets/fonts/Lexend/Lexend-Medium.ttf);
+  src: url(../fonts/Lexend/Lexend-Medium.ttf);
   font-weight: 500;
 }
 @font-face {
   font-family: 'Lexend';
-  src: url(/assets/fonts/Lexend/Lexend-Bold.ttf);
+  src: url(../fonts/Lexend/Lexend-Bold.ttf);
   font-weight: 700;
 }
 * {
