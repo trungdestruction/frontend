@@ -118,6 +118,10 @@ ul li {
   justify-content: space-between;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+}
+#content .search-inner:hover {
+  background-color: #CF585E;
 }
 #content .search-text {
   padding: 10px 10px 10px 0px;
@@ -179,14 +183,27 @@ ul li {
   text-align: center;
 }
 #review .review-city .item-inner .search {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding-top: 15px;
 }
-#review .review-city .item-inner .search a {
-  border: 2px solid #0C3050;
-  border-radius: 25px;
-  padding: 13px 24px;
+#review .review-city .item-inner .search-inner {
+  width: 193px;
+  margin: auto;
+  border: 1px solid #0C3050;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+#review .review-city .item-inner .search-inner:hover {
+  background-color: #CF585E;
+}
+#review .review-city .item-inner .search-text {
+  padding: 10px 10px 10px 0px;
+}
+#review .review-city .item-inner .search .icon {
+  align-items: center;
 }
 #review .review-city .concept {
   position: absolute;
@@ -347,19 +364,26 @@ ul li {
   margin: auto;
   margin-top: 64px;
   margin-bottom: 88px;
-  padding: 17px 39px;
-  background-color: #CF585E;
-  border-radius: 30px;
 }
-#explore .explore .search a {
+#explore .explore .search-inner {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CF585E;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: 0.3s;
 }
-#explore .explore .search a .title {
-  padding-right: 20px;
+#explore .explore .search-text {
   color: #fff;
+  padding-right: 15px;
 }
 #explore .explore .search i {
   color: #fff;
+}
+#explore .explore .search-inner:hover {
+  background-color: #597487;
 }
 #form {
   position: relative;
@@ -447,7 +471,12 @@ ul li {
 #form .form-cover .form-input input {
   padding-left: 16px;
   font-family: lexend;
-  color: #D6D6D6;
+  color: #333;
+}
+#form .form-cover .form-input textarea {
+  padding: 16px;
+  font-family: lexend;
+  color: #333;
 }
 #footer {
   position: relative;
@@ -489,12 +518,18 @@ ul li {
 }
 #footer .footer-up .form input {
   border: none;
+  outline: none;
   font-family: lexend;
+  line-height: 30px;
+  color: #000;
+  padding-right: 50px;
 }
 #footer .footer-up .form .email-btn {
-  padding: 14px 30px;
+  padding: 20px;
   background-color: #0C3050;
   border-radius: 0 10px 10px 0;
+  display: flex;
+  text-align: center;
 }
 #footer .footer-up .form button {
   background-color: #0C3050;

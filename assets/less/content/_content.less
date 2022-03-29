@@ -36,6 +36,10 @@
             border-radius: 30px;
             .flex-between();
             justify-content: center;
+            transition: 0.3s;
+        }
+        &-inner:hover {
+            background-color: #CF585E;
         }
         &-text {
             padding: 10px 10px 10px 0px;
@@ -99,15 +103,26 @@
                 text-align: center;
             } 
             .search {
-                text-align: center;
-                margin-top: 30px;
-                margin-bottom: 10px;
-                a {
-                    border: 2px solid #0C3050;
-                    border-radius: 25px;
-                    padding: 13px 24px;
+                padding-top: 15px;
+                &-inner {
+                    width: 193px;
+                    margin: auto;
+                    border: 1px solid #0C3050;
+                    border-radius: 30px;
+                    .flex-between();
+                    justify-content: center;
+                    transition: 0.3s;
                 }
-            }   
+                &-inner:hover {
+                    background-color: #CF585E;
+                }
+                &-text {
+                    padding: 10px 10px 10px 0px;
+                }
+                .icon {
+                    align-items: center;
+                }
+            }
         }
         .concept {
             position: absolute;
@@ -274,18 +289,24 @@
             margin: auto;
             margin-top: 64px;
             margin-bottom: 88px;
-            padding: 17px 39px;
-            background-color: #CF585E;
-            border-radius: 30px;
-            a {
-                display: flex;
-                .title {
-                    padding-right: 20px;
-                    color: #fff;
-                }
+            &-inner {
+                .flex-between();
+                background-color: #CF585E;
+                padding: 15px 20px;
+                border-radius: 25px;
+                font-weight: 700;
+                transition: 0.3s;
+                
+            }
+            &-text {
+                color: #fff;
+                padding-right: 15px;
             }
             i {
                 color: #fff;
+            }
+            &-inner:hover {
+                background-color: #597487;
             }
         }
     }
@@ -369,7 +390,12 @@
                 input {
                     padding-left: 16px;
                     font-family: lexend;
-                    color: #D6D6D6;
+                    color: #333;
+                }
+                textarea {
+                    padding: 16px;
+                    font-family: lexend;
+                    color: #333;
                 }
             }
         }
