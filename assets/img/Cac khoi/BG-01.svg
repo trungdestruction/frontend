@@ -25,7 +25,7 @@
 	.st19{clip-path:url(#XMLID_17_);}
 	.st20{fill:#496070;}
 	.st21{fill:#FFFFFF;}
-	.st22{display:none;}
+	.st22{display:block;}
 	.st23{display:inline;}
 	.st24{fill:#587487;}
 	.st25{fill:#EAACAD;}

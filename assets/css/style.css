@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Lexend';
-  src: url(/assets/fonts/Lexend/Lexend-Medium.ttf);
+  src: url(../fonts/Lexend/Lexend-Medium.ttf);
   font-weight: 500;
 }
 @font-face {
   font-family: 'Lexend';
-  src: url(/assets/fonts/Lexend/Lexend-Bold.ttf);
+  src: url(../fonts/Lexend/Lexend-Bold.ttf);
   font-weight: 700;
 }
 * {
@@ -44,11 +44,18 @@ ul li {
   flex-wrap: wrap;
   margin: 0 -15px;
 }
+#header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  transition: 0.3s;
+  background-color: #f9f8f8;
+  padding: 25px 0;
+}
 #header .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 52px;
 }
 #header .header-right {
   display: flex;
@@ -56,8 +63,22 @@ ul li {
   align-items: center;
 }
 #header .header-right-inner {
-  padding-left: 80px;
+  margin-left: 80px;
   font-weight: 500;
+  transition: all 0.2s;
+}
+#header .header-right-inner:hover {
+  color: #EAACAD;
+}
+#header .header-right .apply {
+  color: #fff;
+  background-color: #0C3050;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+#header .header-right .apply:hover {
+  background-color: #EAACAD;
 }
 #content img {
   width: 100%;
@@ -118,10 +139,126 @@ ul li {
 #review .review-content .sub-title {
   font-size: 48px;
 }
-#review .review-city .bg {
-  margin-top: 76px;
+#review .review-city {
   position: relative;
-  max-height: 1920px;
+}
+#review .review-city .item {
+  width: 390px;
+  box-shadow: 0px 4px 25px 0px #363636;
+  border-radius: 25px;
+}
+#review .review-city .item-inner {
+  position: relative;
+  padding: 32px;
+}
+#review .review-city .item-inner .main-item {
+  position: absolute;
+  top: -110px;
+  left: 24%;
+}
+#review .review-city .item-inner .main-item img {
+  width: 200px;
+}
+#review .review-city .item-inner .remove-btn {
+  position: relative;
+  left: 102%;
+  top: -50px;
+  border-radius: 25px;
+  background-color: #fff;
+  width: 46px;
+  height: 46px;
+}
+#review .review-city .item-inner .remove-btn img {
+  max-width: 46px;
+}
+#review .review-city .item-inner .info {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 70px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+#review .review-city .item-inner .search {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#review .review-city .item-inner .search a {
+  border: 2px solid #0C3050;
+  border-radius: 25px;
+  padding: 13px 24px;
+}
+#review .review-city .concept {
+  position: absolute;
+  top: 5%;
+  left: 13%;
+  z-index: 99;
+  background-color: #fff;
+  display: none;
+}
+#review .review-city .stock {
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  z-index: 99;
+  background-color: #fff;
+  display: none;
+}
+#review .review-city .mkt {
+  position: absolute;
+  top: 3%;
+  left: 45%;
+  z-index: 99;
+  background-color: #fff;
+  display: none;
+}
+#review .review-city .building {
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  z-index: 99;
+  background-color: #fff;
+  display: none;
+}
+#review .review-city .bo {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  z-index: 99;
+  background-color: #fff;
+  display: none;
+}
+#review .review-city .business {
+  position: absolute;
+  top: 40%;
+  left: 28%;
+  z-index: 99;
+  background-color: #fff;
+  display: none;
+}
+#review .review-city .it {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  background-color: #fff;
+  display: none;
+}
+#review .review-city .landing {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  z-index: 99;
+  background-color: #fff;
+  display: none;
+}
+#review .review-city .manager {
+  position: absolute;
+  top: 47%;
+  left: 32%;
+  z-index: 99;
+  background-color: #fff;
+  display: none;
 }
 #slider .slider {
   display: flex;
