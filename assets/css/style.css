@@ -49,7 +49,6 @@ ul li {
   z-index: 1000;
   width: 100%;
   transition: 0.3s;
-  background-color: #f9f8f8;
   padding: 25px 0;
 }
 #header .header-inner {
@@ -446,8 +445,8 @@ ul li {
   height: 52px;
 }
 #form .form-cover .form-input .mail {
-  width: 718px;
-  height: 227px;
+  width: 706px;
+  height: 210px;
 }
 #form .form-cover .form-input .submit-btn {
   display: flex;

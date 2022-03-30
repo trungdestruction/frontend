@@ -149,4 +149,4 @@ document.getElementById('Khach_san').onmouseover = function() {
 
 document.querySelector('.manager .remove-btn').onclick = function() {
     document.querySelector('.manager').style.display = 'none';
-}   
+}
